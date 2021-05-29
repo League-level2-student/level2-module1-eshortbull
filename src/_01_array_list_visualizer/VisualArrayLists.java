@@ -11,7 +11,7 @@ import _01_array_list_visualizer.data.ArrayList;
 public class VisualArrayLists implements ActionListener {
 	Timer timer;
 	JFrame frame = new JFrame();
-	
+		
 	ArrayList<String> list = new ArrayList<String>();
 
 	public void addThingsToList() {
@@ -31,10 +31,13 @@ public class VisualArrayLists implements ActionListener {
 		//	  and print whether it is in the list or not.
 		System.out.println(list.contains("billy"));
 		// 6. Get a specific item from our list and print it out
-		
+		if(list.contains("Jeff")){
+			System.out.println("Jeff");
+		}                      
 		// 7. Clear our list of all items
-		
-		// 8. Print the size of our list again
+		list.clear();
+		// 8. Print the size of our list again	
+		System.out.println(list.size());	
 	}
 	
 	
